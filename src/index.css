@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}
+
+/* index.css */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .printable {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    padding: 20px !important;
+  }
+
+  .chart-title {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    color: black !important;
+  }
+}
