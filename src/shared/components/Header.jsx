@@ -17,7 +17,7 @@ export const Header = ({ title, showBack = false }) => {
   };
 
   const goToAsistente = () => {
-    window.open("https://asistente-sencillo.vercel.app", "_blank");
+    window.open("https://beeagent.danielsa.icu", "_blank");
   };
 
   return (
